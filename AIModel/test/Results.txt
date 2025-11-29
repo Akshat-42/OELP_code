@@ -1,0 +1,18 @@
+
+Test1.keras (y and v vary 150 epochs)
+Standard deviationX = 0.05191526984082266
+Standard deviationY = 0.0037987672401064193
+Mean errorX = -0.006140922143832246
+Mean errorY = -0.0009402045734061695
+
+Test1.keras (y and v vary 300 epochs)
+Standard deviationX = 0.11643360450976938
+Standard deviationY = 0.0035879516465895153
+Mean errorX = 0.07222072935466926
+Mean errorY = -0.0006681136588577805
+
+Test1.keras
+Standard deviationX = 0.05556734483098251
+Standard deviationY = 0.007350303844159942
+Mean errorX = 0.015807093082320436
+Mean errorY = 0.006223171362282977
