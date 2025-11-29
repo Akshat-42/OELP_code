@@ -19,17 +19,17 @@ data = data.drop('p_f', axis=1)
 sample_size = 2000
 
 
-data = pd.DataFrame({
-    "p_x": 0,#np.random.uniform(0, max_val, sample_size),   # Placeholder
+test_rows = pd.DataFrame({
+    "p_x": [0]*sample_size,#np.random.uniform(0, max_val, sample_size),   # Placeholder
     "p_y": np.random.uniform(-1.2,1.2, sample_size),   # Placeholder
-    "p_z": 2,#np.random.uniform(1.8,2.2, sample_size),   # Placeholder
+    "p_z": [2]*sample_size,#np.random.uniform(1.8,2.2, sample_size),   # Placeholder
     "v_mag": np.random.uniform(18,30, sample_size), # Placeholder
-    "phi": 3,#np.random.uniform(0,5, sample_size),   # Placeholder
-    "w_y": 200,#np.random.uniform(180,256, sample_size),   # Placeholder
+    "phi": [3]*sample_size,#np.random.uniform(0,5, sample_size),   # Placeholder
+    "w_y": [200]*sample_size,#np.random.uniform(180,256, sample_size),   # Placeholder
 })
+print(test_rows)
 
-
-test_rows = data.sample(sample_size)
+#test_rows = data.sample(sample_size)
 
 print("Loading the model and scalers...")
 
@@ -49,6 +49,7 @@ test_vals = np.array([])
 for i in range(sample_size):
     np.append(test_vals,np.array(air_sim(*formatter(p_y = data["p_y"][i],v_mag = data["v_mag"][i]))))
 
+print (test_vals)
 errors = []
 
 new_input_scaled = scaler_X.transform(test_vals)
