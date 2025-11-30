@@ -7,9 +7,9 @@ from keras.layers import Dense
 from keras.callbacks import EarlyStopping
 from joblib import dump
 
-data = pd.read_csv(r"final_pts.csv")
-data2 = pd.read_csv(r"back_spin_pts.csv")
-data = pd.concat([data,data2],axis = 0)
+data = pd.read_csv(r"/home/akshat/code/OELP/OELP_code/final_pts.csv")
+#data2 = pd.read_csv(r"back_spin_pts.csv")
+#data = pd.concat([data,data2],axis = 0)
 data["p_f"] = (data["p_f"].apply(lambda x: list(map(float,x.strip("[]").split(',')))[0:2]))
 p_f_coords = data['p_f'].apply(pd.Series)
 p_f_coords = p_f_coords.rename(columns={0: 'land_x', 1: 'land_y'})
@@ -50,14 +50,14 @@ model = Sequential([
 
 model.summary()
 
-early_stopper = EarlyStopping(monitor='val_loss', patience = 10)
+#early_stopper = EarlyStopping(monitor='val_loss', patience = 10)
 
 model.compile(optimizer='adam', loss = 'mean_squared_error')
 model.fit(X_train, y_train, epochs = 150, validation_data = (X_test, y_test))
 
-model.save('saved_model_64_128*3(ex).keras')
+model.save('saved_model_64_128*3.keras')
 
-dump(scaler_X,'scaler_X2.joblib')
-dump(scaler_y,'scaler_y2.joblib')
+dump(scaler_X,'scaler_X.joblib')
+dump(scaler_y,'scaler_y.joblib')
 
 print("Training done and model saved")

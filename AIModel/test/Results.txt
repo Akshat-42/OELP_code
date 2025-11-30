@@ -16,3 +16,122 @@ Standard deviationX = 0.05556734483098251
 Standard deviationY = 0.007350303844159942
 Mean errorX = 0.015807093082320436
 Mean errorY = 0.006223171362282977
+
+Test1.keras
+Standard deviationX = 0.058030426721950905
+Standard deviationY = 0.007105816768388024
+Mean errorX = 0.019322939841082565
+Mean errorY = 0.006260660958886941
+
+Test1.keras V W Y
+Standard deviationX = 0.14854441787052922
+Standard deviationY = 0.008005581836084057
+Mean errorX = -0.03351077970488116
+Mean errorY = 0.0046894647600547726
+
+
+/home/akshat/code/OELP/OELP_code/temp/saved_model_3layer_128n.keras
+Standard deviationX = 4.252656059381532
+Standard deviationY = 1.8734149493151684
+Mean errorX = -13.630914461275859
+Mean errorY = 9.034950909554203
+/home/akshat/code/OELP/OELP_code/temp/saved_model_3layer_128n.keras
+Standard deviationX = 4.304399976468238
+Standard deviationY = 1.890955962558906
+Mean errorX = -13.806600320669146
+Mean errorY = 9.126180274804511
+/home/akshat/code/OELP/OELP_code/temp/saved_model_3layer_128n.keras
+Standard deviationX = 15.116123129028159
+Standard deviationY = 5.977255849431644
+Mean errorX = -0.2103730239934237
+Mean errorY = 3.3551717685804254
+/home/akshat/code/OELP/OELP_code/temp/saved_model_3layer_128n.keras
+Standard deviationX = 14.578727381947724
+Standard deviationY = 5.76809891076951
+Mean errorX = -0.03543639331137783
+Mean errorY = 3.2757655139040063
+Test1.keras
+Standard deviationX = 7.224194623530203
+Standard deviationY = 0.0
+Mean errorX = -29.880333149186228
+Mean errorY = -2.0
+Test1.keras
+Standard deviationX = 7.078638838921623
+Standard deviationY = 0.0
+Mean errorX = -29.56711947540397
+Mean errorY = 0.0
+Test1.keras
+Standard deviationX = 0.12171407552087711
+Standard deviationY = 0.002656982332921375
+Mean errorX = -0.05042134907543744
+Mean errorY = 0.0007609699070453644
+Test1.keras
+Standard deviationX = 0.11646717974786705
+Standard deviationY = 0.002724617277701286
+Mean errorX = -0.03697886687220195
+Mean errorY = 0.0008638164773583412
+Test1.keras
+Standard deviationX = 0.11646717974786705
+Standard deviationY = 0.002724617277701286
+Mean errorX = -0.03697886687220195
+Mean errorY = 0.0008638164773583412
+Test1.keras
+Standard deviationX = 0.1330340217529184
+Standard deviationY = 0.0010511673041151024
+Mean errorX = 0.11689469313105345
+Mean errorY = 0.0005873493477702141
+Test1.keras
+Standard deviationX = 9.13557768547891
+Standard deviationY = 0.0018437342094253508
+Mean errorX = -44.1725096334776
+Mean errorY = -0.0007696889638900756
+Test1.keras
+Standard deviationX = 2.8190304306806735
+Standard deviationY = 0.000278021633805962
+Mean errorX = 16.230183958754623
+Mean errorY = -0.0023904961943626403
+Test1.keras
+Standard deviationX = 2.8190757751262225
+Standard deviationY = 0.00027006669857046353
+Mean errorX = 16.230295783977432
+Mean errorY = -0.0024397231936454772
+Test1.keras
+Standard deviationX = 2.7981385314377105
+Standard deviationY = 0.002147111625134438
+Mean errorX = 15.570166009428569
+Mean errorY = 0.030039652824401856
+Test1.keras
+Standard deviationX = 2.0697212549370767
+Standard deviationY = 0.0
+Mean errorX = 15.729319762302955
+Mean errorY = 0.0
+Test1.keras
+Standard deviationX = 2.8032407834149216
+Standard deviationY = 0.0
+Mean errorX = 15.689109852504794
+Mean errorY = 0.0
+Test1.keras
+Standard deviationX = 2.8118128940233356
+Standard deviationY = 2.068381720400154
+Mean errorX = 15.959829565561723
+Mean errorY = 16.065867938494893
+Test1.keras
+Standard deviationX = 0.0008297072955755858
+Standard deviationY = 0.0
+Mean errorX = 0.00010124182328814335
+Mean errorY = 0.0
+Test1.keras
+Standard deviationX = 0.0007736644765062894
+Standard deviationY = 0.0
+Mean errorX = -0.0004587403981431226
+Mean errorY = 0.0
+Test1.keras
+Standard deviationX = 0.0007804720140384731
+Standard deviationY = 0.0
+Mean errorX = -0.0004369579046121883
+Mean errorY = 0.0
+Test1.keras
+Standard deviationX = 0.023341765471575487
+Standard deviationY = 0.010718715718685497
+Mean errorX = -0.011434866246772216
+Mean errorY = -0.007335753932175576

@@ -100,15 +100,15 @@ def air_sim(pos_in,v_in,sps,gf,mb,w_in):
 
 final_pts = []
 P_x = [0]#np.linspace(0,2,10)
-P_y = np.linspace(-1.2,1.2,80)
+P_y = np.linspace(-1.2,1.2,25) #[-1.0]#
 P_z = [2]#np.linspace(1.8,2.2,4)
-V_mag = np.linspace(18,30,70)
+V_mag = np.linspace(18,30,100)
 Phi = [3]#np.linspace(0,5,6)
-W_y = [200]#np.linspace(180,256,5)
+W_y = [200]#np.linspace(180,256,40)#
 
 
 if __name__ == '__main__':
-    final_pts_file = r"test_pts2.csv"
+    final_pts_file = r"test_pts_vy.csv"
     with open(final_pts_file,"w+",newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["p_x","p_y","p_z","v_mag","phi","w_y","p_f"])
@@ -117,9 +117,10 @@ if __name__ == '__main__':
                 for p_z in P_z:
                     for v_mag in V_mag:
                         for phi in Phi:
+                            phi_rad = phi*np.pi/180
                             for w_y in W_y:
                                 loc_in = np.array([p_x,p_y,p_z])
-                                v_in = np.array([v_mag*np.cos(phi),0,v_mag*np.sin(phi)])
+                                v_in = np.array([v_mag*np.cos(phi_rad),0,v_mag*np.sin(phi_rad)])
                                 spin_vect = np.array([0,w_y,0])
                                 p_f = air_sim(loc_in,v_in,60,gf,ball_mass,w_in=spin_vect)
                                 # if(p_f[0]<20 and p_f[0]>10 and p_f[1]<1.5 and p_f[1]>-1.5):      
@@ -129,9 +130,9 @@ if __name__ == '__main__':
                                 writer.writerow([p_x,p_y,p_z,v_mag,phi,w_y,p_f])
         print("----Completed----")                            
 # (p_x, p_y, p_z, v_mag, phi, w_y) = (0.19,-1.22,1.8,18.68,0.,221.18)
-def formatter(p_x = 0, p_y = 0, p_z = 2, v_mag = 24, phi = 3, w_y = 200):
+def formatter(p_x = 0, p_y = -1.0, p_z = 2, v_mag = 24, phi = 3, w_y = 200):
     loc_in = np.array([p_x,p_y,p_z])
-    v_in = np.array([v_mag*np.cos(phi),0,v_mag*np.sin(phi)])
+    v_in = np.array([v_mag*np.cos(phi*np.pi/180),0,v_mag*np.sin(phi*np.pi/180)])
     spin_vect = np.array([0,w_y,0])
     return (loc_in,v_in,60,gf,ball_mass,spin_vect)
 

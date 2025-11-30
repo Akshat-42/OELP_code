@@ -1,6 +1,0 @@
-
-PINN_model_3layer_128n.keras
-Standard deviationX = 12.833819664361746
-Standard deviationY = 0.0194536504764227
-Mean errorX = -5.101261429554048
-Mean errorY = -0.002591874762619533
